@@ -1,0 +1,18 @@
+.l-header {
+  .navbar-item .icon + span {
+    margin-left: 3px;
+  }
+}
+
+.l-article {
+  .hero-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.l-footer {
+  opacity: .7;
+  padding: 1.5rem;
+  background-color: transparent;
+}

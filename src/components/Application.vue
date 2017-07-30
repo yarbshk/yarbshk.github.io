@@ -7,8 +7,9 @@
         </div>
       </div>
       <div class="columns">
-        <div class="column is-half is-offset-2-desktop">
+        <div class="column is-half-desktop is-offset-2-desktop">
           <yar-article></yar-article>
+          <yar-switcher :value="indicator" @change="toggleIndicator"></yar-switcher>
         </div>
       </div>
       <div class="columns">
@@ -24,13 +25,15 @@
   import Article from './Article.vue'
   import Footer from './Footer.vue'
   import Header from './Header.vue'
+  import Switcher from './Switcher.vue'
 
   export default {
     name: 'yarApplication',
     components: {
       [Article.name]: Article,
       [Header.name]: Header,
-      [Footer.name]: Footer
+      [Footer.name]: Footer,
+      [Switcher.name]: Switcher
     },
     data () {
       return {
@@ -40,7 +43,12 @@
     },
     computed: {
       themeClass () {
-        return this.indicator ? 'light-theme' : 'dark-theme'
+        return this.indicator ? 't-light' : 't-dark'
+      }
+    },
+    methods: {
+      toggleIndicator (value) {
+        this.indicator = value
       }
     }
   }

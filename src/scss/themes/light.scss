@@ -1,0 +1,8 @@
+.t-light {
+  @import "~bulma/sass/utilities/initial-variables";
+
+  $primary: $black-ter;
+  $primary-invert: $white-ter;
+
+  @import "decorator";
+}

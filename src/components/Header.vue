@@ -1,32 +1,56 @@
 <template>
-  <nav class="navbar">
-    <div class="navbar-menu">
-      <div class="navbar-end">
-        <a href="https://stackoverflow.com/story/yarbshk"
-           class="navbar-item"
-           title="Developer story"
-           target="_blank">
-          <b-icon icon="stack-overflow"></b-icon>
-        </a>
-        <a href="https://github.com/yarbshk"
-           class="navbar-item"
-           title="OpenSource works"
-           target="_blank">
-          <b-icon icon="github"></b-icon>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100008383685619"
-           class="navbar-item"
-           title="Facebook profile"
-           target="_blank">
-          <b-icon icon="facebook"></b-icon>
-        </a>
+  <header class="l-header">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <div :class="['navbar-burger', {'is-active': isNavbarActive}]"
+             @click="isNavbarActive = !isNavbarActive">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-    </div>
-  </nav>
+      <div :class="['navbar-menu', {'is-active': isNavbarActive}]">
+        <div class="navbar-end">
+          <a href="https://stackoverflow.com/story/yarbshk"
+             class="navbar-item"
+             title="Developer story"
+             target="_blank">
+            <span class="icon">
+              <i class="fa fa-stack-overflow"></i>
+            </span>
+            <span class="is-hidden-desktop">Developer story</span>
+          </a>
+          <a href="https://github.com/yarbshk"
+             class="navbar-item"
+             title="OpenSource works"
+             target="_blank">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+            <span class="is-hidden-desktop">OpenSource works</span>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100008383685619"
+             class="navbar-item"
+             title="Facebook profile"
+             target="_blank">
+            <span class="icon">
+              <i class="fa fa-facebook"></i>
+            </span>
+            <span class="is-hidden-desktop">Facebook profile</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
 </template>
 
 <script>
   export default {
-    name: 'yarHeader'
+    name: 'yarHeader',
+    data () {
+      return {
+        isNavbarActive: false
+      }
+    }
   }
 </script>

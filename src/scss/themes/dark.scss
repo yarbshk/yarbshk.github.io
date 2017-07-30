@@ -1,0 +1,26 @@
+.t-dark {
+  @import "~bulma/sass/utilities/initial-variables";
+
+  $primary: $white-ter;
+  $primary-invert: $black-ter;
+
+  $text: $grey-lighter;
+
+  // Elements > Title
+  $title-color: $white-bis;
+  $subtitle-color: $white-ter;
+
+  @import "decorator";
+
+  // Custom selectors
+  .m-square {
+    background-color: $white;
+  }
+
+  .navbar-burger:hover span {
+    background-color: $grey-dark;
+  }
+
+  color: $text;
+  background-color: $black;
+}

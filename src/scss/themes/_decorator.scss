@@ -1,0 +1,31 @@
+// Utilities > Initial variables
+$radius-small: 0;
+$radius: 0;
+$radius-large: 0;
+
+// Elements > Navbar
+$navbar-item-color: $primary;
+$navbar-background-color: transparent;
+
+@import "~bulma/sass/utilities/_all";
+@import "~bulma/sass/elements/button";
+@import "~bulma/sass/elements/icon";
+@import "~bulma/sass/elements/content";
+@import "~bulma/sass/elements/title";
+@import "~bulma/sass/components/navbar";
+
+@include touch() {
+  .navbar-menu.is-active {
+    background-color: $primary;
+    position: absolute;
+    width: 100%;
+  }
+
+  .navbar-item {
+    color: $primary-invert;
+  }
+  a.navbar-item:hover {
+    color: $primary;
+    background-color: $primary-invert;
+  }
+}

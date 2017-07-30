@@ -1,5 +1,5 @@
 <template>
-  <section class="section l-article">
+  <article class="section l-article">
     <div class="m-square"></div>
     <section class="hero">
       <div class="hero-body">
@@ -13,7 +13,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquid, aspernatur atque deleniti dignissimos dolores earum labore maiores minus nemo officia omnis optio saepe sed sint sit, temporibus voluptate!</p>
     </section>
     <a href="mailto:george.rabeshko@gmail.com" class="button is-primary is-outlined is-medium">Contact me now</a>
-  </section>
+  </article>
 </template>
 
 <script>

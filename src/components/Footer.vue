@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="l-footer">
     <div class="content">
       <small>Copyright © {{ year }} Yuriy Rabeshko.</small>
     </div>
