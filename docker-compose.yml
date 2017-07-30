@@ -3,8 +3,9 @@ version: "2"
 services:
   client:
     image: node:latest
+    command: yarn start
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development
     ports:
       - "8080:8080"
     volumes:
