@@ -1,0 +1,14 @@
+.m-switcher.is-active {
+  &:before {
+    font-weight: bold;
+  }
+
+  &:after {
+    font-weight: normal;
+    color: $grey-dark;
+  }
+
+  .m-switcher-knob:before {
+    transform: translate(-50%, 0);
+  }
+}

@@ -1,6 +1,6 @@
 <template>
-  <div class="m-switcher">
-    <input type="checkbox" v-model="indicator" @change="$emit('change', indicator)">
+  <div :class="['m-switcher', {'is-active': indicator}]">
+    <span class="m-switcher-knob" @click="toggleIndicator"></span>
   </div>
 </template>
 
@@ -16,6 +16,12 @@
     data () {
       return {
         indicator: this.value
+      }
+    },
+    methods: {
+      toggleIndicator (event) {
+        this.indicator = !this.indicator
+        this.$emit('change', this.indicator, event)
       }
     }
   }

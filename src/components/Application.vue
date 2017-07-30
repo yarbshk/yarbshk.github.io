@@ -9,6 +9,8 @@
       <div class="columns">
         <div class="column is-half-desktop is-offset-2-desktop">
           <yar-article></yar-article>
+        </div>
+        <div class="column is-4-desktop is-hidden-touch">
           <yar-switcher :value="indicator" @change="toggleIndicator"></yar-switcher>
         </div>
       </div>

@@ -3,3 +3,61 @@
   height: 150px;
   width: 150px;
 }
+
+.m-switcher {
+  border: 1px solid $black-ter;
+  background-color: $white;
+  color: $black-ter !important;
+  width: 7rem;
+
+  &:before {
+    content: 'ON';
+    font-weight: normal;
+  }
+
+  &:after {
+    content: 'OFF';
+    font-weight: bold;
+  }
+
+  &:before, &:after {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .m-switcher-knob {
+    background-color: $red;
+    border: 1px solid $grey-lighter;
+    border-radius: 2rem;
+    display: block;
+    height: 4.5rem;
+    position: relative;
+    margin: 0 auto;
+    width: 2.5rem;
+  }
+
+  .m-switcher-knob:hover {
+    cursor: pointer;
+  }
+
+  .m-switcher-knob:before {
+    background-color: $white;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    left: 50%;
+    height: 1.8rem;
+    position: absolute;
+    margin: 6px 0;
+    transform: translate(-50%, 100%);
+    transition-duration: .1s;
+    transition-timing-function: ease-in;
+    width: 1.8rem;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+}

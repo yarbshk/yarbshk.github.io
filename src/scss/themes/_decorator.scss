@@ -14,6 +14,7 @@ $navbar-background-color: transparent;
 @import "~bulma/sass/elements/title";
 @import "~bulma/sass/components/navbar";
 
+// Media breakpoints
 @include touch() {
   .navbar-menu.is-active {
     background-color: $primary;
