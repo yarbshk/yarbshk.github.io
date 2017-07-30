@@ -11,7 +11,9 @@
           <yar-article></yar-article>
         </div>
         <div class="column is-4-desktop is-hidden-touch">
-          <yar-switcher :value="indicator" @change="toggleIndicator"></yar-switcher>
+          <yar-switcher :value="indicator"
+                        @change="toggleIndicator">
+          </yar-switcher>
         </div>
       </div>
       <div class="columns">
