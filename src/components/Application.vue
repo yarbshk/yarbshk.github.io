@@ -1,5 +1,5 @@
 <template>
-  <section :class="['section', themeClass]">
+  <section :class="['section', themeClass, {'is-invisible': loading}]">
     <div class="container">
       <div class="columns">
         <div class="column">
@@ -8,7 +8,12 @@
       </div>
       <div class="columns">
         <div class="column is-half-desktop is-offset-2-desktop">
-          <yar-article></yar-article>
+          <section class="section">
+            <yar-lightbulb :indicator="indicator"
+                           @load="showApplication">
+            </yar-lightbulb>
+            <yar-article></yar-article>
+          </section>
         </div>
         <div class="column is-4-desktop is-hidden-touch">
           <yar-switcher :value="indicator"
@@ -29,6 +34,7 @@
   import Article from './Article.vue'
   import Footer from './Footer.vue'
   import Header from './Header.vue'
+  import Lightbulb from './Lightbulb.vue'
   import Switcher from './Switcher.vue'
 
   export default {
@@ -37,10 +43,12 @@
       [Article.name]: Article,
       [Header.name]: Header,
       [Footer.name]: Footer,
+      [Lightbulb.name]: Lightbulb,
       [Switcher.name]: Switcher
     },
     data () {
       return {
+        loading: true,
         indicator: true,
         virgin: true
       }
@@ -51,6 +59,9 @@
       }
     },
     methods: {
+      showApplication () {
+        this.loading = false
+      },
       toggleIndicator (value) {
         this.indicator = value
       }

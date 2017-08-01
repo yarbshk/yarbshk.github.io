@@ -1,6 +1,5 @@
 <template>
-  <article class="section l-article">
-    <div class="m-square"></div>
+  <article class="l-article">
     <section class="hero">
       <div class="hero-body">
         <div class="container">
