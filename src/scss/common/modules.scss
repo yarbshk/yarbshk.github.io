@@ -8,6 +8,8 @@
   border: 1px solid $black-ter;
   background-color: $white;
   color: $black-ter !important;
+  float: right;
+  margin-top: 13rem;
   width: 7rem;
 
   &:before {
@@ -59,5 +61,15 @@
 
   input[type="checkbox"] {
     display: none;
+  }
+}
+
+#logo {
+  height: 150px;
+  width: 150px;
+
+  object {
+    height: 0;
+    width: 0;
   }
 }

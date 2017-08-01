@@ -1,9 +1,11 @@
 @charset "utf-8";
 
-@import "themes/dark";
-@import "themes/light";
+@import "~bulma/sass/utilities/initial-variables";
 
-$red: #e61d2b;
+@import "themes/light/theme";
+@import "themes/dark/theme";
+
+@import "init";
 
 @import "~bulma/sass/utilities/_all";
 @import "~bulma/sass/base/_all";

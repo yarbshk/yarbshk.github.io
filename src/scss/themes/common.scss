@@ -1,0 +1,16 @@
+// Media breakpoints
+@include touch() {
+  .navbar-menu.is-active {
+    background-color: $primary;
+    position: absolute;
+    width: 100%;
+  }
+
+  .navbar-item {
+    color: $primary-invert;
+  }
+  a.navbar-item:hover {
+    color: $primary;
+    background-color: $primary-invert;
+  }
+}

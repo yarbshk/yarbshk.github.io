@@ -1,0 +1,15 @@
+.t-dark {
+  @import "init";
+  @import "../decorator";
+
+  color: $text;
+  background-color: $black;
+
+  .m-square {
+    background-color: $white;
+  }
+
+  .navbar-burger:hover span {
+    background-color: $grey-dark;
+  }
+}
