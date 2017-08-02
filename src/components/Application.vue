@@ -10,14 +10,14 @@
         <div class="column is-half-desktop is-offset-2-desktop">
           <section class="section">
             <yar-lightbulb :indicator="indicator"
-                           @load="showApplication">
+                           @load="loading = false">
             </yar-lightbulb>
             <yar-article></yar-article>
           </section>
         </div>
         <div class="column is-4-desktop is-hidden-touch">
           <yar-switcher :value="indicator"
-                        @change="toggleIndicator">
+                        @change="x => indicator = x">
           </yar-switcher>
         </div>
       </div>
@@ -56,14 +56,6 @@
     computed: {
       themeClass () {
         return this.indicator ? 't-light' : 't-dark'
-      }
-    },
-    methods: {
-      showApplication () {
-        this.loading = false
-      },
-      toggleIndicator (value) {
-        this.indicator = value
       }
     }
   }
