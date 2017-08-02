@@ -51,6 +51,18 @@
         this.loading = false
         this.$emit('load', this.loading, event)
       },
+      getPointCoordinates ([x0, y0], deg, radius) {
+        const rad = deg * Math.PI / 180
+        return [
+          x0 + Math.cos(rad) * radius,
+          y0 + Math.sin(rad) * radius
+        ]
+      },
+      getRandomInt (min, max) {
+        min = Math.ceil(min)
+        max = Math.floor(max)
+        return Math.floor(Math.random() * (max - min + 1)) + min
+      },
       paintLogo (value) {
         value
           ? this.paintLightLogo()
@@ -61,9 +73,19 @@
         SVG.get('#background')
           .select('rect')
           .attr({ fill: palette.black })
-        SVG.get('#lampbulb')
+        const lampbulb = SVG.get('#lampbulb')
+        lampbulb
           .select('path')
           .attr({ fill: palette.white })
+        // Set beams animation
+        const angles = [15, 330, 305, 270, 235, 210, 165]
+        lampbulb.select('[id^="beam"]').each((index, members) => {
+          const beam = members[index]
+          const point = [beam.cx(), beam.cy()]
+          const duration = this.getRandomInt(400, 600)
+          const [x, y] = this.getPointCoordinates(point, angles[index], 30)
+          beam.animate(duration, '<>').center(x, y).loop(true, true)
+        })
       },
       paintDarkLogo () {
         const palette = this.colorPalette
