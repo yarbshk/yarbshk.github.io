@@ -9,8 +9,8 @@
   background-color: $white;
   color: $black-ter !important;
   float: right;
-  margin-top: 13rem;
-  width: 7rem;
+  margin-top: 16rem;
+  width: 6rem;
 
   &:before {
     content: 'ON';
@@ -24,7 +24,7 @@
 
   &:before, &:after {
     display: block;
-    padding: 1rem;
+    padding: .85rem;
     text-align: center;
     width: 100%;
   }
@@ -34,10 +34,11 @@
     border: 1px solid $grey-lighter;
     border-radius: 2rem;
     display: block;
-    height: 4.5rem;
+    height: 3.5rem;
+    padding: 3px;
     position: relative;
     margin: 0 auto;
-    width: 2.5rem;
+    width: 2rem;
   }
 
   .m-switcher-knob:hover {
@@ -50,13 +51,12 @@
     content: '';
     display: block;
     left: 50%;
-    height: 1.8rem;
+    height: 1.5rem;
     position: absolute;
-    margin: 6px 0;
     transform: translate(-50%, 100%);
     transition-duration: .1s;
     transition-timing-function: ease-in;
-    width: 1.8rem;
+    width: 1.5rem;
   }
 
   input[type="checkbox"] {
