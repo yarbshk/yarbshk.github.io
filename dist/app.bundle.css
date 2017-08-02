@@ -4245,12 +4245,15 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   width: 150px; }
 
 .m-switcher {
+  position: fixed;
   border: 1px solid #242424;
   background-color: white;
   color: #242424 !important;
-  float: right;
-  margin-top: 13rem;
-  width: 7rem; }
+  bottom: 0;
+  right: 0;
+  margin-right: 1.5rem;
+  margin-bottom: 5rem;
+  width: 6rem; }
   .m-switcher:before {
     content: 'ON';
     font-weight: normal; }
@@ -4259,7 +4262,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     font-weight: bold; }
   .m-switcher:before, .m-switcher:after {
     display: block;
-    padding: 1rem;
+    padding: .85rem;
     text-align: center;
     width: 100%; }
   .m-switcher .m-switcher-knob {
@@ -4267,10 +4270,11 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     border: 1px solid #dbdbdb;
     border-radius: 2rem;
     display: block;
-    height: 4.5rem;
+    height: 3.5rem;
+    padding: 3px;
     position: relative;
     margin: 0 auto;
-    width: 2.5rem; }
+    width: 2rem; }
   .m-switcher .m-switcher-knob:hover {
     cursor: pointer; }
   .m-switcher .m-switcher-knob:before {
@@ -4279,19 +4283,18 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     content: '';
     display: block;
     left: 50%;
-    height: 1.8rem;
+    height: 1.5rem;
     position: absolute;
-    margin: 6px 0;
     transform: translate(-50%, 100%);
     transition-duration: .1s;
     transition-timing-function: ease-in;
-    width: 1.8rem; }
+    width: 1.5rem; }
   .m-switcher input[type="checkbox"] {
     display: none; }
 
 #logo {
-  height: 150px;
-  width: 150px; }
+  height: 175px;
+  width: 175px; }
   #logo object {
     height: 0;
     width: 0; }
