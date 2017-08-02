@@ -30,7 +30,7 @@
     },
     computed: {
       draw () {
-        return SVG('logo').size(150, 150).viewbox(0, 0, 1000, 1000)
+        return SVG('logo').size(175, 175).viewbox(0, 0, 1000, 1000)
       },
       svg () {
         const svgDocument = this.$refs.logoSvg.contentDocument
