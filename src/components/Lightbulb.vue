@@ -83,7 +83,7 @@
           const beam = members[index]
           const point = [beam.cx(), beam.cy()]
           const duration = this.getRandomInt(400, 600)
-          const [x, y] = this.getPointCoordinates(point, angles[index], 30)
+          const [x, y] = this.getPointCoordinates(point, angles[index], 50)
           beam.animate(duration, '<>').center(x, y).loop(true, true)
         })
       },
