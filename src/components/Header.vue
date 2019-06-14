@@ -29,14 +29,14 @@
             </span>
             <span class="is-hidden-desktop">OpenSource works</span>
           </a>
-          <a href="https://www.facebook.com/profile.php?id=100008383685619"
+          <a href="https://twitter.com/yarbshk"
              class="navbar-item"
-             title="Facebook profile"
+             title="Twitter profile"
              target="_blank">
             <span class="icon">
-              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
             </span>
-            <span class="is-hidden-desktop">Facebook profile</span>
+            <span class="is-hidden-desktop">Twitter profile</span>
           </a>
         </div>
       </div>
