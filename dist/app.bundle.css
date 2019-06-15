@@ -5154,6 +5154,8 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     display: none; }
 
 #logo {
+  height: 130px;
+  width: 130px;
   margin-left: -5px; }
   #logo object {
     height: 0;

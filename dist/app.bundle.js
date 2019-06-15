@@ -10862,7 +10862,7 @@ function(t, e, n) {
             attrs: {
                 href: "mailto:yurii.rabeshko@mail.com"
             }
-        }, [ t._v("Contact me now") ]) ]);
+        }, [ t._v("Let's talk") ]) ]);
     } ];
     r._withStripped = true;
     var a = {

@@ -11,7 +11,7 @@
     <section class="content">
       <p>You're reading about the man that boundlessly love self-development and not afraid of tricky challenges that appear on the way. I code in Java, Python and TypeScript prefer the quality and readability of the code. I’m an object bigot!</p>
     </section>
-    <a href="mailto:yurii.rabeshko@mail.com" class="button is-primary is-outlined is-medium">Contact me now</a>
+    <a href="mailto:yurii.rabeshko@mail.com" class="button is-primary is-outlined is-medium">Let's talk</a>
   </article>
 </template>
 
