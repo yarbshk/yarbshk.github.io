@@ -1482,7 +1482,7 @@
 
 .t-dark {
   color: #dbdbdb;
-  background-color: #0a0a0a; }
+  background-color: #000; }
 
 @keyframes spinAround {
   from {
@@ -1568,36 +1568,36 @@
     .t-dark .button.is-white {
       background-color: white;
       border-color: transparent;
-      color: #0a0a0a; }
+      color: #000; }
       .t-dark .button.is-white:hover, .t-dark .button.is-white.is-hovered {
         background-color: #f9f9f9;
         border-color: transparent;
-        color: #0a0a0a; }
+        color: #000; }
       .t-dark .button.is-white:focus, .t-dark .button.is-white.is-focused {
         border-color: transparent;
-        color: #0a0a0a; }
+        color: #000; }
         .t-dark .button.is-white:focus:not(:active), .t-dark .button.is-white.is-focused:not(:active) {
           box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25); }
       .t-dark .button.is-white:active, .t-dark .button.is-white.is-active {
         background-color: #f2f2f2;
         border-color: transparent;
-        color: #0a0a0a; }
+        color: #000; }
       .t-dark .button.is-white[disabled] {
         background-color: white;
         border-color: transparent;
         box-shadow: none; }
       .t-dark .button.is-white.is-inverted {
-        background-color: #0a0a0a;
+        background-color: #000;
         color: white; }
         .t-dark .button.is-white.is-inverted:hover {
           background-color: black; }
         .t-dark .button.is-white.is-inverted[disabled] {
-          background-color: #0a0a0a;
+          background-color: #000;
           border-color: transparent;
           box-shadow: none;
           color: white; }
       .t-dark .button.is-white.is-loading:after {
-        border-color: transparent transparent #0a0a0a #0a0a0a !important; }
+        border-color: transparent transparent #000 #000 !important; }
       .t-dark .button.is-white.is-outlined {
         background-color: transparent;
         border-color: white;
@@ -1605,7 +1605,7 @@
         .t-dark .button.is-white.is-outlined:hover, .t-dark .button.is-white.is-outlined:focus {
           background-color: white;
           border-color: white;
-          color: #0a0a0a; }
+          color: #000; }
         .t-dark .button.is-white.is-outlined.is-loading:after {
           border-color: transparent transparent white white !important; }
         .t-dark .button.is-white.is-outlined[disabled] {
@@ -1615,71 +1615,71 @@
           color: white; }
       .t-dark .button.is-white.is-inverted.is-outlined {
         background-color: transparent;
-        border-color: #0a0a0a;
-        color: #0a0a0a; }
+        border-color: #000;
+        color: #000; }
         .t-dark .button.is-white.is-inverted.is-outlined:hover, .t-dark .button.is-white.is-inverted.is-outlined:focus {
-          background-color: #0a0a0a;
+          background-color: #000;
           color: white; }
         .t-dark .button.is-white.is-inverted.is-outlined[disabled] {
           background-color: transparent;
-          border-color: #0a0a0a;
+          border-color: #000;
           box-shadow: none;
-          color: #0a0a0a; }
+          color: #000; }
     .t-dark .button.is-black {
-      background-color: #0a0a0a;
+      background-color: #000;
       border-color: transparent;
       color: white; }
       .t-dark .button.is-black:hover, .t-dark .button.is-black.is-hovered {
-        background-color: #040404;
+        background-color: black;
         border-color: transparent;
         color: white; }
       .t-dark .button.is-black:focus, .t-dark .button.is-black.is-focused {
         border-color: transparent;
         color: white; }
         .t-dark .button.is-black:focus:not(:active), .t-dark .button.is-black.is-focused:not(:active) {
-          box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25); }
+          box-shadow: 0 0 0 0.125em rgba(0, 0, 0, 0.25); }
       .t-dark .button.is-black:active, .t-dark .button.is-black.is-active {
         background-color: black;
         border-color: transparent;
         color: white; }
       .t-dark .button.is-black[disabled] {
-        background-color: #0a0a0a;
+        background-color: #000;
         border-color: transparent;
         box-shadow: none; }
       .t-dark .button.is-black.is-inverted {
         background-color: white;
-        color: #0a0a0a; }
+        color: #000; }
         .t-dark .button.is-black.is-inverted:hover {
           background-color: #f2f2f2; }
         .t-dark .button.is-black.is-inverted[disabled] {
           background-color: white;
           border-color: transparent;
           box-shadow: none;
-          color: #0a0a0a; }
+          color: #000; }
       .t-dark .button.is-black.is-loading:after {
         border-color: transparent transparent white white !important; }
       .t-dark .button.is-black.is-outlined {
         background-color: transparent;
-        border-color: #0a0a0a;
-        color: #0a0a0a; }
+        border-color: #000;
+        color: #000; }
         .t-dark .button.is-black.is-outlined:hover, .t-dark .button.is-black.is-outlined:focus {
-          background-color: #0a0a0a;
-          border-color: #0a0a0a;
+          background-color: #000;
+          border-color: #000;
           color: white; }
         .t-dark .button.is-black.is-outlined.is-loading:after {
-          border-color: transparent transparent #0a0a0a #0a0a0a !important; }
+          border-color: transparent transparent #000 #000 !important; }
         .t-dark .button.is-black.is-outlined[disabled] {
           background-color: transparent;
-          border-color: #0a0a0a;
+          border-color: #000;
           box-shadow: none;
-          color: #0a0a0a; }
+          color: #000; }
       .t-dark .button.is-black.is-inverted.is-outlined {
         background-color: transparent;
         border-color: white;
         color: white; }
         .t-dark .button.is-black.is-inverted.is-outlined:hover, .t-dark .button.is-black.is-inverted.is-outlined:focus {
           background-color: white;
-          color: #0a0a0a; }
+          color: #000; }
         .t-dark .button.is-black.is-inverted.is-outlined[disabled] {
           background-color: transparent;
           border-color: white;
@@ -2344,23 +2344,23 @@
     position: relative; }
     .t-dark .navbar.is-white {
       background-color: white;
-      color: #0a0a0a; }
+      color: #000; }
       .t-dark .navbar.is-white .navbar-brand > .navbar-item,
       .t-dark .navbar.is-white .navbar-brand .navbar-link {
-        color: #0a0a0a; }
+        color: #000; }
       .t-dark .navbar.is-white .navbar-brand > a.navbar-item:hover, .t-dark .navbar.is-white .navbar-brand > a.navbar-item.is-active,
       .t-dark .navbar.is-white .navbar-brand .navbar-link:hover,
       .t-dark .navbar.is-white .navbar-brand .navbar-link.is-active {
         background-color: #f2f2f2;
-        color: #0a0a0a; }
+        color: #000; }
       .t-dark .navbar.is-white .navbar-brand .navbar-link::after {
-        border-color: #0a0a0a; }
+        border-color: #000; }
       @media screen and (min-width: 1024px) {
         .t-dark .navbar.is-white .navbar-start > .navbar-item,
         .t-dark .navbar.is-white .navbar-start .navbar-link,
         .t-dark .navbar.is-white .navbar-end > .navbar-item,
         .t-dark .navbar.is-white .navbar-end .navbar-link {
-          color: #0a0a0a; }
+          color: #000; }
         .t-dark .navbar.is-white .navbar-start > a.navbar-item:hover, .t-dark .navbar.is-white .navbar-start > a.navbar-item.is-active,
         .t-dark .navbar.is-white .navbar-start .navbar-link:hover,
         .t-dark .navbar.is-white .navbar-start .navbar-link.is-active,
@@ -2369,19 +2369,19 @@
         .t-dark .navbar.is-white .navbar-end .navbar-link:hover,
         .t-dark .navbar.is-white .navbar-end .navbar-link.is-active {
           background-color: #f2f2f2;
-          color: #0a0a0a; }
+          color: #000; }
         .t-dark .navbar.is-white .navbar-start .navbar-link::after,
         .t-dark .navbar.is-white .navbar-end .navbar-link::after {
-          border-color: #0a0a0a; }
+          border-color: #000; }
         .t-dark .navbar.is-white .navbar-item.has-dropdown:hover .navbar-link,
         .t-dark .navbar.is-white .navbar-item.has-dropdown.is-active .navbar-link {
           background-color: #f2f2f2;
-          color: #0a0a0a; }
+          color: #000; }
         .t-dark .navbar.is-white .navbar-dropdown a.navbar-item.is-active {
           background-color: white;
-          color: #0a0a0a; } }
+          color: #000; } }
     .t-dark .navbar.is-black {
-      background-color: #0a0a0a;
+      background-color: #000;
       color: white; }
       .t-dark .navbar.is-black .navbar-brand > .navbar-item,
       .t-dark .navbar.is-black .navbar-brand .navbar-link {
@@ -2416,7 +2416,7 @@
           background-color: black;
           color: white; }
         .t-dark .navbar.is-black .navbar-dropdown a.navbar-item.is-active {
-          background-color: #0a0a0a;
+          background-color: #000;
           color: white; } }
     .t-dark .navbar.is-light {
       background-color: whitesmoke;
@@ -2690,7 +2690,7 @@
       min-height: 3.25rem;
       width: 100%; }
     .t-dark .navbar.has-shadow {
-      box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1); }
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); }
   .t-dark .navbar-brand,
   .t-dark .navbar-tabs {
     align-items: stretch;
@@ -2751,7 +2751,7 @@
   .t-dark .navbar-link:hover,
   .t-dark .navbar-link.is-active {
     background-color: whitesmoke;
-    color: #0a0a0a; }
+    color: #000; }
   .t-dark .navbar-item {
     flex-grow: 0;
     flex-shrink: 0; }
@@ -2800,7 +2800,7 @@
       display: flex; }
     .t-dark .navbar-menu {
       background-color: white;
-      box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
       padding: 0.5rem 0; }
       .t-dark .navbar-menu.is-active {
         display: block; } }
@@ -2821,7 +2821,7 @@
         background-color: transparent; }
       .t-dark .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
         background-color: whitesmoke;
-        color: #0a0a0a; }
+        color: #000; }
       .t-dark .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
         background-color: whitesmoke;
         color: whitesmoke; }
@@ -2867,7 +2867,7 @@
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       border-top: 1px solid #dbdbdb;
-      box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1);
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
       display: none;
       font-size: 0.875rem;
       left: 0;
@@ -2882,14 +2882,14 @@
         padding-right: 3rem; }
         .t-dark .navbar-dropdown a.navbar-item:hover {
           background-color: whitesmoke;
-          color: #0a0a0a; }
+          color: #000; }
         .t-dark .navbar-dropdown a.navbar-item.is-active {
           background-color: whitesmoke;
           color: whitesmoke; }
       .t-dark .navbar-dropdown.is-boxed {
         border-radius: 0;
         border-top: none;
-        box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
         display: block;
         opacity: 0;
         pointer-events: none;
@@ -2908,7 +2908,7 @@
       margin-right: -1rem; }
     .t-dark a.navbar-item.is-active,
     .t-dark .navbar-link.is-active {
-      color: #0a0a0a; }
+      color: #000; }
     .t-dark a.navbar-item.is-active:not(:hover),
     .t-dark .navbar-link.is-active:not(:hover) {
       background-color: transparent; }
@@ -5154,8 +5154,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     display: none; }
 
 #logo {
-  height: 175px;
-  width: 175px; }
+  margin-left: -5px; }
   #logo object {
     height: 0;
     width: 0; }
@@ -5173,6 +5172,12 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 .is-invisible {
   visibility: hidden; }
 
+.navbar.is-vcentered,
+.navbar-brand.is-vcentered {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .l-header .navbar-item .icon + span {
   margin-left: 3px; }
 
@@ -5182,5 +5187,5 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 
 .l-footer {
   opacity: .7;
-  padding: 1.5rem;
+  padding: 4.5rem 0 .5rem 0;
   background-color: transparent; }

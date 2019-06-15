@@ -16,3 +16,10 @@
 .is-invisible {
   visibility: hidden;
 }
+
+.navbar.is-vcentered,
+.navbar-brand.is-vcentered {
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+}

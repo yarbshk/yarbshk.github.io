@@ -107,7 +107,7 @@
     /******/
     // Load entry module and return exports
     /******/
-    return n(n.s = 8);
+    return n(n.s = 7);
 })([ /* 0 */
 /***/
 function(t, e) {
@@ -218,22 +218,18 @@ function(t, e, n) {
         value: true
     });
     var r;
-    var i = n(14);
-    var a = p(i);
-    var s = n(16);
-    var o = p(s);
-    var u = n(18);
-    var f = p(u);
-    var l = n(20);
-    var c = p(l);
-    var h = n(23);
-    var d = p(h);
-    function p(t) {
+    var i = n(13);
+    var a = l(i);
+    var s = n(15);
+    var o = l(s);
+    var u = n(17);
+    var f = l(u);
+    function l(t) {
         return t && t.__esModule ? t : {
             default: t
         };
     }
-    function v(t, e, n) {
+    function c(t, e, n) {
         if (e in t) {
             Object.defineProperty(t, e, {
                 value: n,
@@ -258,41 +254,18 @@ function(t, e, n) {
     //
     //
     //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
-    //
     e.default = {
         name: "yarApplication",
-        components: (r = {}, v(r, a.default.name, a.default), v(r, f.default.name, f.default), 
-        v(r, o.default.name, o.default), v(r, c.default.name, c.default), v(r, d.default.name, d.default), 
-        r),
+        components: (r = {}, c(r, a.default.name, a.default), c(r, f.default.name, f.default), 
+        c(r, o.default.name, o.default), r),
         data: function t() {
             return {
-                loading: true,
-                indicator: true,
                 virgin: true
             };
         },
         computed: {
             themeClass: function t() {
-                return this.indicator ? "t-light" : "t-dark";
+                return "t-dark";
             }
         }
     };
@@ -353,6 +326,27 @@ function(t, e, n) {
     Object.defineProperty(e, "__esModule", {
         value: true
     });
+    var r = n(18);
+    var i = a(r);
+    function a(t) {
+        return t && t.__esModule ? t : {
+            default: t
+        };
+    }
+    function s(t, e, n) {
+        if (e in t) {
+            Object.defineProperty(t, e, {
+                value: n,
+                enumerable: true,
+                configurable: true,
+                writable: true
+            });
+        } else {
+            t[e] = n;
+        }
+        return t;
+    }
+    //
     //
     //
     //
@@ -405,7 +399,8 @@ function(t, e, n) {
             return {
                 isNavbarActive: false
             };
-        }
+        },
+        components: s({}, i.default.name, i.default)
     };
 }, /* 6 */
 /***/
@@ -457,7 +452,7 @@ function(t, e, n) {
     //
     //
     //
-    var i = n(21);
+    var i = n(19);
     var a = s(i);
     function s(t) {
         return t && t.__esModule ? t : {
@@ -483,7 +478,7 @@ function(t, e, n) {
         },
         computed: {
             draw: function t() {
-                return (0, a.default)("logo").size(175, 175).viewbox(0, 0, 1e3, 1e3);
+                return (0, a.default)("logo").size(130, 130).viewbox(105, 80, 800, 800);
             },
             svg: function t() {
                 var e = this.$refs.logoSvg.contentDocument;
@@ -552,44 +547,11 @@ function(t, e, n) {
 /***/
 function(t, e, n) {
     "use strict";
-    Object.defineProperty(e, "__esModule", {
-        value: true
-    });
-    //
-    //
-    //
-    //
-    //
-    //
-    e.default = {
-        name: "yarSwitcher",
-        props: {
-            value: {
-                type: Boolean,
-                default: true
-            }
-        },
-        data: function t() {
-            return {
-                indicator: this.value
-            };
-        },
-        methods: {
-            toggleIndicator: function t(e) {
-                this.indicator = !this.indicator;
-                this.$emit("change", this.indicator, e);
-            }
-        }
-    };
-}, /* 8 */
-/***/
-function(t, e, n) {
-    "use strict";
-    var r = n(9);
+    var r = n(8);
     var i = o(r);
-    var a = n(13);
+    var a = n(12);
     var s = o(a);
-    n(26);
+    n(23);
     function o(t) {
         return t && t.__esModule ? t : {
             default: t
@@ -612,7 +574,7 @@ function(t, e, n) {
         el: "#v-root",
         components: u({}, s.default.name, s.default)
     });
-}, /* 9 */
+}, /* 8 */
 /***/
 function(t, e, n) {
     "use strict";
@@ -920,9 +882,9 @@ function(t, e, n) {
         }
         var z = "data-server-rendered";
         var U = [ "component", "directive", "filter" ];
-        var q = [ "beforeCreate", "created", "beforeMount", "mounted", "beforeUpdate", "updated", "beforeDestroy", "destroyed", "activated", "deactivated", "errorCaptured", "serverPrefetch" ];
+        var X = [ "beforeCreate", "created", "beforeMount", "mounted", "beforeUpdate", "updated", "beforeDestroy", "destroyed", "activated", "deactivated", "errorCaptured", "serverPrefetch" ];
         /*  */
-        var X = {
+        var q = {
             /**
    * Option merge strategies (used in core/util/options)
    */
@@ -997,7 +959,7 @@ function(t, e, n) {
             /**
    * Exposed for legacy reasons
    */
-            _lifecycleHooks: q
+            _lifecycleHooks: X
         };
         /*  */
         /**
@@ -1138,14 +1100,14 @@ function(t, e, n) {
             };
             xt = function(t, e) {
                 var n = e ? _t(e) : "";
-                if (X.warnHandler) {
-                    X.warnHandler.call(null, t, e, n);
-                } else if (kt && !X.silent) {
+                if (q.warnHandler) {
+                    q.warnHandler.call(null, t, e, n);
+                } else if (kt && !q.silent) {
                     console.error("[Vue warn]: " + t + n);
                 }
             };
             wt = function(t, e) {
-                if (kt && !X.silent) {
+                if (kt && !q.silent) {
                     console.warn("[Vue tip]: " + t + (e ? _t(e) : ""));
                 }
             };
@@ -1226,7 +1188,7 @@ function(t, e, n) {
         Tt.prototype.notify = function t() {
             // stabilize the subscriber list first
             var e = this.subs.slice();
-            if ("development" !== "production" && !X.async) {
+            if ("development" !== "production" && !q.async) {
                 // subs aren't sorted in scheduler if not running async
                 // we need to sort them now to make sure they fire in correct
                 // order
@@ -1378,9 +1340,9 @@ function(t, e, n) {
             J(e, "__ob__", this);
             if (Array.isArray(e)) {
                 if (Z) {
-                    qt(e, Rt);
+                    Xt(e, Rt);
                 } else {
-                    Xt(e, Rt, Vt);
+                    qt(e, Rt, Vt);
                 }
                 this.observeArray(e);
             } else {
@@ -1411,7 +1373,7 @@ function(t, e, n) {
  * Augment a target Object or Array by intercepting
  * the prototype chain using __proto__
  */
-        function qt(t, e) {
+        function Xt(t, e) {
             /* eslint-disable no-proto */
             t.__proto__ = e;
         }
@@ -1420,7 +1382,7 @@ function(t, e, n) {
  * hidden properties.
  */
         /* istanbul ignore next */
-        function Xt(t, e, n) {
+        function qt(t, e, n) {
             for (var r = 0, i = n.length; r < i; r++) {
                 var a = n[r];
                 J(t, a, e[a]);
@@ -1577,7 +1539,7 @@ function(t, e, n) {
  * how to merge a parent option value and a child option
  * value into the final value.
  */
-        var Zt = X.optionMergeStrategies;
+        var Zt = q.optionMergeStrategies;
         /**
  * Options with restrictions
  */
@@ -1673,7 +1635,7 @@ function(t, e, n) {
             }
             return e;
         }
-        q.forEach(function(t) {
+        X.forEach(function(t) {
             Zt[t] = ee;
         });
         /**
@@ -1767,7 +1729,7 @@ function(t, e, n) {
             if (!new RegExp("^[a-zA-Z][\\-\\.0-9_" + Y.source + "]*$").test(t)) {
                 xt('Invalid component name: "' + t + '". Component names ' + "should conform to valid custom element name in html5 specification.");
             }
-            if (b(t) || X.isReservedTag(t)) {
+            if (b(t) || q.isReservedTag(t)) {
                 xt("Do not use built-in or reserved HTML elements as component " + "id: " + t);
             }
         }
@@ -2155,9 +2117,9 @@ function(t, e, n) {
             return a;
         }
         function Se(t, e, n) {
-            if (X.errorHandler) {
+            if (q.errorHandler) {
                 try {
-                    return X.errorHandler.call(null, t, e, n);
+                    return q.errorHandler.call(null, t, e, n);
                 } catch (e) {
                     // if the user intentionally throws the original error in the handler,
                     // do not log it twice
@@ -2301,13 +2263,13 @@ function(t, e, n) {
             var Ue = function(t, e) {
                 xt('Property or method "' + e + '" is not defined on the instance but ' + "referenced during render. Make sure that this property is reactive, " + "either in the data option, or for class-based components, by " + "initializing the property. " + "See: https://vuejs.org/v2/guide/reactivity.html#Declaring-Reactive-Properties.", t);
             };
-            var qe = function(t, e) {
+            var Xe = function(t, e) {
                 xt('Property "' + e + '" must be accessed with "$data.' + e + '" because ' + 'properties starting with "$" or "_" are not proxied in the Vue instance to ' + "prevent conflicts with Vue internals" + "See: https://vuejs.org/v2/api/#data", t);
             };
-            var Xe = typeof Proxy !== "undefined" && yt(Proxy);
-            if (Xe) {
+            var qe = typeof Proxy !== "undefined" && yt(Proxy);
+            if (qe) {
                 var Ye = g("stop,prevent,self,ctrl,shift,alt,meta,exact");
-                X.keyCodes = new Proxy(X.keyCodes, {
+                q.keyCodes = new Proxy(q.keyCodes, {
                     set: function t(e, n, r) {
                         if (Ye(n)) {
                             xt("Avoid overwriting built-in modifier in config.keyCodes: ." + n);
@@ -2325,7 +2287,7 @@ function(t, e, n) {
                     var r = ze(n) || typeof n === "string" && n.charAt(0) === "_" && !(n in e.$data);
                     if (!t && !r) {
                         if (n in e.$data) {
-                            qe(e, n);
+                            Xe(e, n);
                         } else {
                             Ue(e, n);
                         }
@@ -2337,7 +2299,7 @@ function(t, e, n) {
                 get: function t(e, n) {
                     if (typeof n === "string" && !(n in e)) {
                         if (n in e.$data) {
-                            qe(e, n);
+                            Xe(e, n);
                         } else {
                             Ue(e, n);
                         }
@@ -2346,7 +2308,7 @@ function(t, e, n) {
                 }
             };
             He = function t(e) {
-                if (Xe) {
+                if (qe) {
                     // determine which proxy handler to use
                     var n = e.$options;
                     var r = n.render && n.render._withStripped ? Je : Ge;
@@ -2853,8 +2815,8 @@ function(t, e, n) {
  * passing in eventKeyName as last argument separately for backwards compat
  */
         function _n(t, e, n, r, i) {
-            var a = X.keyCodes[e] || n;
-            if (i && r && !X.keyCodes[e]) {
+            var a = q.keyCodes[e] || n;
+            if (i && r && !q.keyCodes[e]) {
                 return wn(i, r);
             } else if (a) {
                 return wn(a, t);
@@ -2880,7 +2842,7 @@ function(t, e, n) {
                             a = t;
                         } else {
                             var o = t.attrs && t.attrs.type;
-                            a = r || X.mustUseProp(e, o, s) ? t.domProps || (t.domProps = {}) : t.attrs || (t.attrs = {});
+                            a = r || q.mustUseProp(e, o, s) ? t.domProps || (t.domProps = {}) : t.attrs || (t.attrs = {});
                         }
                         var u = $(s);
                         var f = T(s);
@@ -3068,7 +3030,7 @@ function(t, e, n) {
             }
             if (u._scopeId) {
                 this._c = function(t, e, n, r) {
-                    var a = Xn(f, t, e, n, r, c);
+                    var a = qn(f, t, e, n, r, c);
                     if (a && !Array.isArray(a)) {
                         a.fnScopeId = u._scopeId;
                         a.fnContext = i;
@@ -3077,7 +3039,7 @@ function(t, e, n) {
                 };
             } else {
                 this._c = function(t, e, n, r) {
-                    return Xn(f, t, e, n, r, c);
+                    return qn(f, t, e, n, r, c);
                 };
             }
         }
@@ -3314,17 +3276,17 @@ function(t, e, n) {
         }
         /*  */
         var Un = 1;
-        var qn = 2;
+        var Xn = 2;
         // wrapper function for providing a more flexible interface
         // without getting yelled at by flow
-        function Xn(t, e, n, r, i, a) {
+        function qn(t, e, n, r, i, a) {
             if (Array.isArray(n) || u(n)) {
                 i = r;
                 r = n;
                 n = undefined;
             }
             if (s(a)) {
-                i = qn;
+                i = Xn;
             }
             return Yn(t, e, n, r, i);
         }
@@ -3355,7 +3317,7 @@ function(t, e, n) {
                 };
                 r.length = 0;
             }
-            if (i === qn) {
+            if (i === Xn) {
                 r = on(r);
             } else if (i === Un) {
                 r = sn(r);
@@ -3363,10 +3325,10 @@ function(t, e, n) {
             var s, o;
             if (typeof e === "string") {
                 var f;
-                o = t.$vnode && t.$vnode.ns || X.getTagNamespace(e);
-                if (X.isReservedTag(e)) {
+                o = t.$vnode && t.$vnode.ns || q.getTagNamespace(e);
+                if (q.isReservedTag(e)) {
                     // platform built-in elements
-                    s = new Et(X.parsePlatformTagName(e), n, r, undefined, undefined, t);
+                    s = new Et(q.parsePlatformTagName(e), n, r, undefined, undefined, t);
                 } else if ((!n || !n.pre) && a(f = he(t.$options, "components", e))) {
                     // component
                     s = Rn(f, n, t, r, e);
@@ -3438,12 +3400,12 @@ function(t, e, n) {
             // args order: tag, data, children, normalizationType, alwaysNormalize
             // internal version is used by render functions compiled from templates
             t._c = function(e, n, r, i) {
-                return Xn(t, e, n, r, i, false);
+                return qn(t, e, n, r, i, false);
             };
             // normalization is always applied for the public version, used in
             // user-written render functions.
             t.$createElement = function(e, n, r, i) {
-                return Xn(t, e, n, r, i, true);
+                return qn(t, e, n, r, i, true);
             };
             // $attrs & $listeners are exposed for easier HOC creation.
             // they need to be reactive so that HOCs using them are always updated
@@ -3892,7 +3854,7 @@ function(t, e, n) {
             wr(t, "beforeMount");
             var r;
             /* istanbul ignore if */
-            if ("development" !== "production" && X.performance && Re) {
+            if ("development" !== "production" && q.performance && Re) {
                 r = function() {
                     var e = t._name;
                     var r = t._uid;
@@ -4138,7 +4100,7 @@ function(t, e, n) {
             Ir(r);
             // devtool hook
             /* istanbul ignore if */
-            if (mt && X.devtools) {
+            if (mt && q.devtools) {
                 mt.emit("flush");
             }
         }
@@ -4191,7 +4153,7 @@ function(t, e, n) {
                 // queue the flush
                 if (!Sr) {
                     Sr = true;
-                    if ("development" !== "production" && !X.async) {
+                    if ("development" !== "production" && !q.async) {
                         jr();
                         return;
                     }
@@ -4405,7 +4367,7 @@ function(t, e, n) {
                 Zr(t, e.methods);
             }
             if (e.data) {
-                qr(t);
+                Xr(t);
             } else {
                 Yt(t._data = {}, true);
             }
@@ -4433,7 +4395,7 @@ function(t, e, n) {
                 /* istanbul ignore else */
                 if (true) {
                     var u = T(s);
-                    if (x(u) || X.isReservedAttr(u)) {
+                    if (x(u) || q.isReservedAttr(u)) {
                         xt('"' + u + '" is a reserved attribute and cannot be used as component prop.', t);
                     }
                     Gt(r, s, o, function() {
@@ -4454,9 +4416,9 @@ function(t, e, n) {
             for (var o in e) s(o);
             zt(true);
         }
-        function qr(t) {
+        function Xr(t) {
             var e = t.$options.data;
-            e = t._data = typeof e === "function" ? Xr(e, t) : e || {};
+            e = t._data = typeof e === "function" ? qr(e, t) : e || {};
             if (!h(e)) {
                 e = {};
                 "development" !== "production" && xt("data functions should return an object:\n" + "https://vuejs.org/v2/guide/components.html#data-Must-Be-a-Function", t);
@@ -4482,7 +4444,7 @@ function(t, e, n) {
             // observe data
             Yt(e, true);
         }
-        function Xr(t, e) {
+        function qr(t, e) {
             // #7573 disable dep collection when invoking data getters
             Ot();
             try {
@@ -4653,7 +4615,7 @@ function(t, e, n) {
                 e._uid = ni++;
                 var n, r;
                 /* istanbul ignore if */
-                if ("development" !== "production" && X.performance && Re) {
+                if ("development" !== "production" && q.performance && Re) {
                     n = "vue-perf-start:" + e._uid;
                     r = "vue-perf-end:" + e._uid;
                     Re(n);
@@ -4688,7 +4650,7 @@ function(t, e, n) {
                 // resolve provide after data/props
                 wr(e, "created");
                 /* istanbul ignore if */
-                if ("development" !== "production" && X.performance && Re) {
+                if ("development" !== "production" && q.performance && Re) {
                     e._name = Ct(e, false);
                     Re(r);
                     Be("vue " + e._name + " init", n, r);
@@ -5008,7 +4970,7 @@ function(t, e, n) {
             // config
             var e = {};
             e.get = function() {
-                return X;
+                return q;
             };
             if (true) {
                 e.set = function() {
@@ -5173,7 +5135,7 @@ function(t, e, n) {
         var Ui = function(t) {
             return Vi(t) || Hi(t);
         };
-        function qi(t) {
+        function Xi(t) {
             if (Hi(t)) {
                 return "svg";
             }
@@ -5183,7 +5145,7 @@ function(t, e, n) {
                 return "math";
             }
         }
-        var Xi = Object.create(null);
+        var qi = Object.create(null);
         function Yi(t) {
             /* istanbul ignore if */
             if (!Q) {
@@ -5194,15 +5156,15 @@ function(t, e, n) {
             }
             t = t.toLowerCase();
             /* istanbul ignore if */
-            if (Xi[t] != null) {
-                return Xi[t];
+            if (qi[t] != null) {
+                return qi[t];
             }
             var e = document.createElement(t);
             if (t.indexOf("-") > -1) {
                 // http://stackoverflow.com/a/28210364/1070244
-                return Xi[t] = e.constructor === window.HTMLUnknownElement || e.constructor === window.HTMLElement;
+                return qi[t] = e.constructor === window.HTMLUnknownElement || e.constructor === window.HTMLElement;
             } else {
-                return Xi[t] = /HTMLUnknownElement/.test(e.toString());
+                return qi[t] = /HTMLUnknownElement/.test(e.toString());
             }
         }
         var Gi = g("text,number,password,search,email,tel,url");
@@ -5392,9 +5354,9 @@ function(t, e, n) {
                 }
             }
             function p(t, e) {
-                return !e && !t.ns && !(X.ignoredElements.length && X.ignoredElements.some(function(e) {
+                return !e && !t.ns && !(q.ignoredElements.length && q.ignoredElements.some(function(e) {
                     return d(e) ? e.test(t.tag) : e === t.tag;
-                })) && X.isUnknownElement(t.tag);
+                })) && q.isUnknownElement(t.tag);
             }
             var v = 0;
             function m(t, e, n, r, i, o, u) {
@@ -6354,7 +6316,7 @@ function(t, e, n) {
             }) : [];
         }
         function La(t, e, n, r, i) {
-            (t.props || (t.props = [])).push(Xa({
+            (t.props || (t.props = [])).push(qa({
                 name: e,
                 value: n,
                 dynamic: i
@@ -6363,7 +6325,7 @@ function(t, e, n) {
         }
         function Fa(t, e, n, r, i) {
             var a = i ? t.dynamicAttrs || (t.dynamicAttrs = []) : t.attrs || (t.attrs = []);
-            a.push(Xa({
+            a.push(qa({
                 name: e,
                 value: n,
                 dynamic: i
@@ -6373,13 +6335,13 @@ function(t, e, n) {
         // add a raw attr (use this in preTransforms)
         function Da(t, e, n, r) {
             t.attrsMap[e] = n;
-            t.attrsList.push(Xa({
+            t.attrsList.push(qa({
                 name: e,
                 value: n
             }, r));
         }
         function Ra(t, e, n, r, i, a, s, o) {
-            (t.directives || (t.directives = [])).push(Xa({
+            (t.directives || (t.directives = [])).push(qa({
                 name: e,
                 rawName: n,
                 value: r,
@@ -6437,7 +6399,7 @@ function(t, e, n) {
             } else {
                 f = t.events || (t.events = {});
             }
-            var l = Xa({
+            var l = qa({
                 value: n.trim(),
                 dynamic: u
             }, o);
@@ -6489,7 +6451,7 @@ function(t, e, n) {
             }
             return r;
         }
-        function qa(t, e) {
+        function Xa(t, e) {
             var n = t.attrsList;
             for (var r = 0, i = n.length; r < i; r++) {
                 var a = n[r];
@@ -6499,7 +6461,7 @@ function(t, e, n) {
                 }
             }
         }
-        function Xa(t, e) {
+        function qa(t, e) {
             if (e) {
                 if (e.start != null) {
                     t.start = e.start;
@@ -6664,7 +6626,7 @@ function(t, e, n) {
                 hs(t, r, i);
             } else if (a === "input" || a === "textarea") {
                 ps(t, r, i);
-            } else if (!X.isReservedTag(a)) {
+            } else if (!q.isReservedTag(a)) {
                 Ya(t, r, i);
                 // component v-model doesn't need extra runtime
                 return false;
@@ -7122,15 +7084,15 @@ function(t, e, n) {
             if (typeof t === "object") {
                 var e = {};
                 if (t.css !== false) {
-                    j(e, qs(t.name || "v"));
+                    j(e, Xs(t.name || "v"));
                 }
                 j(e, t);
                 return e;
             } else if (typeof t === "string") {
-                return qs(t);
+                return Xs(t);
             }
         }
-        var qs = k(function(t) {
+        var Xs = k(function(t) {
             return {
                 enterClass: t + "-enter",
                 enterToClass: t + "-enter-to",
@@ -7140,7 +7102,7 @@ function(t, e, n) {
                 leaveActiveClass: t + "-leave-active"
             };
         });
-        var Xs = Q && !it;
+        var qs = Q && !it;
         var Ys = "transition";
         var Gs = "animation";
         // Transition property/event sniffing
@@ -7148,7 +7110,7 @@ function(t, e, n) {
         var Ws = "transitionend";
         var Ks = "animation";
         var Zs = "animationend";
-        if (Xs) {
+        if (qs) {
             /* istanbul ignore if */
             if (window.ontransitionend === undefined && window.onwebkittransitionend !== undefined) {
                 Js = "WebkitTransition";
@@ -7952,7 +7914,7 @@ function(t, e, n) {
             methods: {
                 hasMove: function t(e, n) {
                     /* istanbul ignore if */
-                    if (!Xs) {
+                    if (!qs) {
                         return false;
                     }
                     /* istanbul ignore if */
@@ -8013,7 +7975,7 @@ function(t, e, n) {
         oi.config.mustUseProp = ki;
         oi.config.isReservedTag = Ui;
         oi.config.isReservedAttr = _i;
-        oi.config.getTagNamespace = qi;
+        oi.config.getTagNamespace = Xi;
         oi.config.isUnknownElement = Yi;
         // install platform runtime directives & components
         j(oi.options.directives, To);
@@ -8029,28 +7991,28 @@ function(t, e, n) {
         /* istanbul ignore next */
         if (Q) {
             setTimeout(function() {
-                if (X.devtools) {
+                if (q.devtools) {
                     if (mt) {
                         mt.emit("init", oi);
                     } else if (true) {
                         console[console.info ? "info" : "log"]("Download the Vue Devtools extension for a better development experience:\n" + "https://github.com/vuejs/vue-devtools");
                     }
                 }
-                if ("development" !== "production" && "development" !== "test" && X.productionTip !== false && typeof console !== "undefined") {
+                if ("development" !== "production" && "development" !== "test" && q.productionTip !== false && typeof console !== "undefined") {
                     console[console.info ? "info" : "log"]("You are running Vue in development mode.\n" + "Make sure to turn on production mode when deploying for production.\n" + "See more tips at https://vuejs.org/guide/deployment.html");
                 }
             }, 0);
         }
         /*  */
-        var qo = /\{\{((?:.|\r?\n)+?)\}\}/g;
-        var Xo = /[-.*+?^${}()|[\]\/\\]/g;
+        var Xo = /\{\{((?:.|\r?\n)+?)\}\}/g;
+        var qo = /[-.*+?^${}()|[\]\/\\]/g;
         var Yo = k(function(t) {
-            var e = t[0].replace(Xo, "\\$&");
-            var n = t[1].replace(Xo, "\\$&");
+            var e = t[0].replace(qo, "\\$&");
+            var n = t[1].replace(qo, "\\$&");
             return new RegExp(e + "((?:.|\\n)+?)" + n, "g");
         });
         function Go(t, e) {
-            var n = e ? Yo(e) : qo;
+            var n = e ? Yo(e) : Xo;
             if (!n.test(t)) {
                 return;
             }
@@ -8459,8 +8421,8 @@ function(t, e, n) {
         var Hu;
         var zu;
         var Uu;
-        var qu;
         var Xu;
+        var qu;
         var Yu;
         var Gu;
         function Ju(t, e, n) {
@@ -8479,8 +8441,8 @@ function(t, e, n) {
  */
         function Wu(t, e) {
             Bu = e.warn || ja;
-            qu = e.isPreTag || F;
-            Xu = e.mustUseProp || F;
+            Xu = e.isPreTag || F;
+            qu = e.mustUseProp || F;
             Yu = e.getTagNamespace || F;
             var n = e.isReservedTag || F;
             Gu = function(t) {
@@ -8552,7 +8514,7 @@ function(t, e, n) {
                 if (t.pre) {
                     u = false;
                 }
-                if (qu(t.tag)) {
+                if (Xu(t.tag)) {
                     f = false;
                 }
                 // apply post-transforms
@@ -8635,7 +8597,7 @@ function(t, e, n) {
                             u = true;
                         }
                     }
-                    if (qu(v.tag)) {
+                    if (Xu(v.tag)) {
                         f = true;
                     }
                     if (u) {
@@ -8937,7 +8899,7 @@ function(t, e, n) {
             {
                 if (t.tag === "template") {
                     // v-slot on <template>
-                    var r = qa(t, ju);
+                    var r = Xa(t, ju);
                     if (r) {
                         if (true) {
                             if (t.slotTarget || t.slotScope) {
@@ -8956,7 +8918,7 @@ function(t, e, n) {
                     }
                 } else {
                     // v-slot on component, denotes default slot
-                    var o = qa(t, ju);
+                    var o = Xa(t, ju);
                     if (o) {
                         if (true) {
                             if (!Gu(t)) {
@@ -9076,7 +9038,7 @@ function(t, e, n) {
                                 }
                             }
                         }
-                        if (o && o.prop || !t.component && Xu(t.tag, t.attrsMap.type, i)) {
+                        if (o && o.prop || !t.component && qu(t.tag, t.attrsMap.type, i)) {
                             La(t, i, s, e[n], f);
                         } else {
                             Fa(t, i, s, e[n], f);
@@ -9119,7 +9081,7 @@ function(t, e, n) {
                     Fa(t, i, JSON.stringify(s), e[n]);
                     // #6887 firefox doesn't update muted state if set via attribute
                     // even immediately after element creation
-                    if (!t.component && i === "muted" && Xu(t.tag, t.attrsMap.type, i)) {
+                    if (!t.component && i === "muted" && qu(t.tag, t.attrsMap.type, i)) {
                         La(t, i, "true", e[n]);
                     }
                 }
@@ -9278,7 +9240,7 @@ function(t, e, n) {
             mustUseProp: ki,
             canBeLeftOpenTag: iu,
             isReservedTag: Ui,
-            getTagNamespace: qi,
+            getTagNamespace: Xi,
             staticKeys: R(Sf)
         };
         /*  */
@@ -9407,7 +9369,7 @@ function(t, e, n) {
             delete: [ 8, 46 ]
         };
         // KeyboardEvent.key aliases
-        var qf = {
+        var Xf = {
             // #7880: IE11 and Edge use `Esc` for Escape key name.
             esc: [ "Esc", "Escape" ],
             tab: "Tab",
@@ -9425,20 +9387,20 @@ function(t, e, n) {
         // #4868: modifiers that prevent the execution of the listener
         // need to explicitly return null so that we can determine whether to remove
         // the listener for .once
-        var Xf = function(t) {
+        var qf = function(t) {
             return "if(" + t + ")return null;";
         };
         var Yf = {
             stop: "$event.stopPropagation();",
             prevent: "$event.preventDefault();",
-            self: Xf("$event.target !== $event.currentTarget"),
-            ctrl: Xf("!$event.ctrlKey"),
-            shift: Xf("!$event.shiftKey"),
-            alt: Xf("!$event.altKey"),
-            meta: Xf("!$event.metaKey"),
-            left: Xf("'button' in $event && $event.button !== 0"),
-            middle: Xf("'button' in $event && $event.button !== 1"),
-            right: Xf("'button' in $event && $event.button !== 2")
+            self: qf("$event.target !== $event.currentTarget"),
+            ctrl: qf("!$event.ctrlKey"),
+            shift: qf("!$event.shiftKey"),
+            alt: qf("!$event.altKey"),
+            meta: qf("!$event.metaKey"),
+            left: qf("'button' in $event && $event.button !== 0"),
+            middle: qf("'button' in $event && $event.button !== 1"),
+            right: qf("'button' in $event && $event.button !== 2")
         };
         function Gf(t, e) {
             var n = e ? "nativeOn:" : "on:";
@@ -9489,7 +9451,7 @@ function(t, e, n) {
                         }
                     } else if (o === "exact") {
                         var u = t.modifiers;
-                        a += Xf([ "ctrl", "shift", "alt", "meta" ].filter(function(t) {
+                        a += qf([ "ctrl", "shift", "alt", "meta" ].filter(function(t) {
                             return !u[t];
                         }).map(function(t) {
                             return "$event." + t + "Key";
@@ -9521,7 +9483,7 @@ function(t, e, n) {
                 return "$event.keyCode!==" + e;
             }
             var n = Uf[t];
-            var r = qf[t];
+            var r = Xf[t];
             return "_k($event.keyCode," + JSON.stringify(t) + "," + JSON.stringify(n) + "," + "$event.key," + "" + JSON.stringify(r) + ")";
         }
         /*  */
@@ -10268,16 +10230,16 @@ function(t, e, n) {
         var Ul = Hl.compileToFunctions;
         /*  */
         // check whether current browser encodes a char inside attribute values
-        var ql;
-        function Xl(t) {
-            ql = ql || document.createElement("div");
-            ql.innerHTML = t ? '<a href="\n"/>' : '<div a="\n"/>';
-            return ql.innerHTML.indexOf("&#10;") > 0;
+        var Xl;
+        function ql(t) {
+            Xl = Xl || document.createElement("div");
+            Xl.innerHTML = t ? '<a href="\n"/>' : '<div a="\n"/>';
+            return Xl.innerHTML.indexOf("&#10;") > 0;
         }
         // #3663: IE encodes newlines inside attribute values while other browsers don't
-        var Yl = Q ? Xl(false) : false;
+        var Yl = Q ? ql(false) : false;
         // #6828: chrome encodes content in a[href]
-        var Gl = Q ? Xl(true) : false;
+        var Gl = Q ? ql(true) : false;
         /*  */
         var Jl = k(function(t) {
             var e = Ji(t);
@@ -10317,7 +10279,7 @@ function(t, e, n) {
                 }
                 if (r) {
                     /* istanbul ignore if */
-                    if ("development" !== "production" && X.performance && Re) {
+                    if ("development" !== "production" && q.performance && Re) {
                         Re("compile");
                     }
                     var i = Ul(r, {
@@ -10332,7 +10294,7 @@ function(t, e, n) {
                     n.render = a;
                     n.staticRenderFns = s;
                     /* istanbul ignore if */
-                    if ("development" !== "production" && X.performance && Re) {
+                    if ("development" !== "production" && q.performance && Re) {
                         Re("compile end");
                         Be("vue " + this._name + " compile", "compile", "compile end");
                     }
@@ -10356,8 +10318,8 @@ function(t, e, n) {
         oi.compile = Ul;
         /* harmony default export */
         e["default"] = oi;
-    }).call(e, n(1), n(10).setImmediate);
-}, /* 10 */
+    }).call(e, n(1), n(9).setImmediate);
+}, /* 9 */
 /***/
 function(t, e, n) {
     /* WEBPACK VAR INJECTION */
@@ -10403,14 +10365,14 @@ function(t, e, n) {
             }
         };
         // setimmediate attaches itself to the global object
-        n(11);
+        n(10);
         // On some exotic environments, it's not clear which object `setimmediate` was
         // able to install onto.  Search each possibility in the same order as the
         // `setimmediate` library.
         e.setImmediate = typeof self !== "undefined" && self.setImmediate || typeof t !== "undefined" && t.setImmediate || this && this.setImmediate;
         e.clearImmediate = typeof self !== "undefined" && self.clearImmediate || typeof t !== "undefined" && t.clearImmediate || this && this.clearImmediate;
     }).call(e, n(1));
-}, /* 11 */
+}, /* 10 */
 /***/
 function(t, e, n) {
     /* WEBPACK VAR INJECTION */
@@ -10586,8 +10548,8 @@ function(t, e, n) {
             g.setImmediate = u;
             g.clearImmediate = f;
         })(typeof self === "undefined" ? typeof t === "undefined" ? this : t : self);
-    }).call(e, n(1), n(12));
-}, /* 12 */
+    }).call(e, n(1), n(11));
+}, /* 11 */
 /***/
 function(t, e) {
     // shim for using process in browser
@@ -10763,7 +10725,7 @@ function(t, e) {
     n.umask = function() {
         return 0;
     };
-}, /* 13 */
+}, /* 12 */
 /***/
 function(t, e, n) {
     "use strict";
@@ -10781,7 +10743,7 @@ function(t, e, n) {
         });
     })(a);
     /* harmony import */
-    var s = n(25);
+    var s = n(22);
     var o = false;
     var u = n(0);
     /* script */
@@ -10815,7 +10777,7 @@ function(t, e, n) {
     }
     /* harmony default export */
     e["default"] = d.exports;
-}, /* 14 */
+}, /* 13 */
 /***/
 function(t, e, n) {
     "use strict";
@@ -10833,7 +10795,7 @@ function(t, e, n) {
         });
     })(a);
     /* harmony import */
-    var s = n(15);
+    var s = n(14);
     var o = false;
     var u = n(0);
     /* script */
@@ -10867,7 +10829,7 @@ function(t, e, n) {
     }
     /* harmony default export */
     e["default"] = d.exports;
-}, /* 15 */
+}, /* 14 */
 /***/
 function(t, e, n) {
     "use strict";
@@ -10915,7 +10877,7 @@ function(t, e, n) {
             require("vue-hot-reload-api").rerender("data-v-72bad814", a);
         }
     }
-}, /* 16 */
+}, /* 15 */
 /***/
 function(t, e, n) {
     "use strict";
@@ -10933,7 +10895,7 @@ function(t, e, n) {
         });
     })(a);
     /* harmony import */
-    var s = n(17);
+    var s = n(16);
     var o = false;
     var u = n(0);
     /* script */
@@ -10967,7 +10929,7 @@ function(t, e, n) {
     }
     /* harmony default export */
     e["default"] = d.exports;
-}, /* 17 */
+}, /* 16 */
 /***/
 function(t, e, n) {
     "use strict";
@@ -10995,7 +10957,7 @@ function(t, e, n) {
             require("vue-hot-reload-api").rerender("data-v-40ab164b", a);
         }
     }
-}, /* 18 */
+}, /* 17 */
 /***/
 function(t, e, n) {
     "use strict";
@@ -11013,7 +10975,7 @@ function(t, e, n) {
         });
     })(a);
     /* harmony import */
-    var s = n(19);
+    var s = n(21);
     var o = false;
     var u = n(0);
     /* script */
@@ -11047,96 +11009,7 @@ function(t, e, n) {
     }
     /* harmony default export */
     e["default"] = d.exports;
-}, /* 19 */
-/***/
-function(t, e, n) {
-    "use strict";
-    var r = function() {
-        var t = this;
-        var e = t.$createElement;
-        var n = t._self._c || e;
-        return n("header", {
-            staticClass: "l-header"
-        }, [ n("nav", {
-            staticClass: "navbar"
-        }, [ n("div", {
-            staticClass: "navbar-brand"
-        }, [ n("div", {
-            class: [ "navbar-burger", {
-                "is-active": t.isNavbarActive
-            } ],
-            on: {
-                click: function(e) {
-                    t.isNavbarActive = !t.isNavbarActive;
-                }
-            }
-        }, [ n("span"), t._v(" "), n("span"), t._v(" "), n("span") ]) ]), t._v(" "), n("div", {
-            class: [ "navbar-menu", {
-                "is-active": t.isNavbarActive
-            } ]
-        }, [ t._m(0) ]) ]) ]);
-    };
-    var i = [ function() {
-        var t = this;
-        var e = t.$createElement;
-        var n = t._self._c || e;
-        return n("div", {
-            staticClass: "navbar-end"
-        }, [ n("a", {
-            staticClass: "navbar-item",
-            attrs: {
-                href: "https://stackoverflow.com/story/yarbshk",
-                title: "Developer story",
-                target: "_blank"
-            }
-        }, [ n("span", {
-            staticClass: "icon"
-        }, [ n("i", {
-            staticClass: "fa fa-stack-overflow"
-        }) ]), t._v(" "), n("span", {
-            staticClass: "is-hidden-desktop"
-        }, [ t._v("Developer story") ]) ]), t._v(" "), n("a", {
-            staticClass: "navbar-item",
-            attrs: {
-                href: "https://github.com/yarbshk",
-                title: "OpenSource works",
-                target: "_blank"
-            }
-        }, [ n("span", {
-            staticClass: "icon"
-        }, [ n("i", {
-            staticClass: "fa fa-github"
-        }) ]), t._v(" "), n("span", {
-            staticClass: "is-hidden-desktop"
-        }, [ t._v("OpenSource works") ]) ]), t._v(" "), n("a", {
-            staticClass: "navbar-item",
-            attrs: {
-                href: "https://twitter.com/yarbshk",
-                title: "Twitter profile",
-                target: "_blank"
-            }
-        }, [ n("span", {
-            staticClass: "icon"
-        }, [ n("i", {
-            staticClass: "fa fa-twitter"
-        }) ]), t._v(" "), n("span", {
-            staticClass: "is-hidden-desktop"
-        }, [ t._v("Twitter profile") ]) ]) ]);
-    } ];
-    r._withStripped = true;
-    var a = {
-        render: r,
-        staticRenderFns: i
-    };
-    /* harmony default export */
-    e["a"] = a;
-    if (false) {
-        t.hot.accept();
-        if (t.hot.data) {
-            require("vue-hot-reload-api").rerender("data-v-61dd7a3d", a);
-        }
-    }
-}, /* 20 */
+}, /* 18 */
 /***/
 function(t, e, n) {
     "use strict";
@@ -11154,7 +11027,7 @@ function(t, e, n) {
         });
     })(a);
     /* harmony import */
-    var s = n(22);
+    var s = n(20);
     var o = false;
     var u = n(0);
     /* script */
@@ -11188,7 +11061,7 @@ function(t, e, n) {
     }
     /* harmony default export */
     e["default"] = d.exports;
-}, /* 21 */
+}, /* 19 */
 /***/
 function(t, e, n) {
     var r;
@@ -15157,7 +15030,7 @@ function(t, e, n) {
         })(t);
         return r;
     });
-}, /* 22 */
+}, /* 20 */
 /***/
 function(t, e, n) {
     "use strict";
@@ -15194,59 +15067,7 @@ function(t, e, n) {
             require("vue-hot-reload-api").rerender("data-v-c10148c2", a);
         }
     }
-}, /* 23 */
-/***/
-function(t, e, n) {
-    "use strict";
-    Object.defineProperty(e, "__esModule", {
-        value: true
-    });
-    /* harmony import */
-    var r = n(7);
-    /* harmony import */
-    var i = n.n(r);
-    /* harmony namespace reexport (unknown) */
-    for (var a in r) if (a !== "default") (function(t) {
-        n.d(e, t, function() {
-            return r[t];
-        });
-    })(a);
-    /* harmony import */
-    var s = n(24);
-    var o = false;
-    var u = n(0);
-    /* script */
-    /* template */
-    /* template functional */
-    var f = false;
-    /* styles */
-    var l = null;
-    /* scopeId */
-    var c = null;
-    /* moduleIdentifier (server only) */
-    var h = null;
-    var d = u(i.a, s["a"], f, l, c, h);
-    d.options.__file = "src/components/Switcher.vue";
-    /* hot reload */
-    if (false) {
-        (function() {
-            var e = require("vue-hot-reload-api");
-            e.install(require("vue"), false);
-            if (!e.compatible) return;
-            t.hot.accept();
-            if (!t.hot.data) {
-                e.createRecord("data-v-df1ae2de", d.options);
-            } else {
-                e.reload("data-v-df1ae2de", d.options);
-            }
-            t.hot.dispose(function(t) {
-                o = true;
-            });
-        })();
-    }
-    /* harmony default export */
-    e["default"] = d.exports;
-}, /* 24 */
+}, /* 21 */
 /***/
 function(t, e, n) {
     "use strict";
@@ -15254,18 +15075,78 @@ function(t, e, n) {
         var t = this;
         var e = t.$createElement;
         var n = t._self._c || e;
-        return n("div", {
-            class: [ "m-switcher", {
-                "is-active": t.indicator
-            } ]
-        }, [ n("span", {
-            staticClass: "m-switcher-knob",
-            on: {
-                click: t.toggleIndicator
+        return n("header", {
+            staticClass: "l-header"
+        }, [ n("nav", {
+            staticClass: "navbar is-vcentered"
+        }, [ n("div", {
+            staticClass: "navbar-brand is-vcentered"
+        }, [ n("yar-lightbulb", {
+            attrs: {
+                indicator: true
             }
-        }) ]);
+        }), t._v(" "), n("div", {
+            class: [ "navbar-burger", {
+                "is-active": t.isNavbarActive
+            } ],
+            on: {
+                click: function(e) {
+                    t.isNavbarActive = !t.isNavbarActive;
+                }
+            }
+        }, [ n("span"), t._v(" "), n("span"), t._v(" "), n("span") ]) ], 1), t._v(" "), n("div", {
+            class: [ "navbar-menu", {
+                "is-active": t.isNavbarActive
+            } ]
+        }, [ t._m(0) ]) ]) ]);
     };
-    var i = [];
+    var i = [ function() {
+        var t = this;
+        var e = t.$createElement;
+        var n = t._self._c || e;
+        return n("div", {
+            staticClass: "navbar-end"
+        }, [ n("a", {
+            staticClass: "navbar-item",
+            attrs: {
+                href: "https://stackoverflow.com/story/yarbshk",
+                title: "Developer story",
+                target: "_blank"
+            }
+        }, [ n("span", {
+            staticClass: "icon"
+        }, [ n("i", {
+            staticClass: "fa fa-stack-overflow"
+        }) ]), t._v(" "), n("span", {
+            staticClass: "is-hidden-desktop"
+        }, [ t._v("Developer story") ]) ]), t._v(" "), n("a", {
+            staticClass: "navbar-item",
+            attrs: {
+                href: "https://github.com/yarbshk",
+                title: "OpenSource works",
+                target: "_blank"
+            }
+        }, [ n("span", {
+            staticClass: "icon"
+        }, [ n("i", {
+            staticClass: "fa fa-github"
+        }) ]), t._v(" "), n("span", {
+            staticClass: "is-hidden-desktop"
+        }, [ t._v("OpenSource works") ]) ]), t._v(" "), n("a", {
+            staticClass: "navbar-item",
+            attrs: {
+                href: "https://twitter.com/yarbshk",
+                title: "Twitter profile",
+                target: "_blank"
+            }
+        }, [ n("span", {
+            staticClass: "icon"
+        }, [ n("i", {
+            staticClass: "fa fa-twitter"
+        }) ]), t._v(" "), n("span", {
+            staticClass: "is-hidden-desktop"
+        }, [ t._v("Twitter profile") ]) ]) ]);
+    } ];
     r._withStripped = true;
     var a = {
         render: r,
@@ -15276,10 +15157,10 @@ function(t, e, n) {
     if (false) {
         t.hot.accept();
         if (t.hot.data) {
-            require("vue-hot-reload-api").rerender("data-v-df1ae2de", a);
+            require("vue-hot-reload-api").rerender("data-v-61dd7a3d", a);
         }
     }
-}, /* 25 */
+}, /* 22 */
 /***/
 function(t, e, n) {
     "use strict";
@@ -15287,47 +15168,17 @@ function(t, e, n) {
         var t = this;
         var e = t.$createElement;
         var n = t._self._c || e;
-        return n("section", {
-            class: [ "section", t.themeClass, {
-                "is-invisible": t.loading
-            } ]
-        }, [ n("div", {
-            staticClass: "container"
-        }, [ n("div", {
-            staticClass: "columns"
-        }, [ n("div", {
-            staticClass: "column"
-        }, [ n("yar-header") ], 1) ]), t._v(" "), n("div", {
-            staticClass: "columns"
-        }, [ n("div", {
-            staticClass: "column is-half-desktop is-offset-2-desktop"
-        }, [ n("section", {
-            staticClass: "section"
-        }, [ n("yar-lightbulb", {
-            attrs: {
-                indicator: t.indicator
-            },
-            on: {
-                load: function(e) {
-                    t.loading = false;
-                }
+        return n("div", {
+            class: [ "section", t.themeClass ],
+            staticStyle: {
+                height: "100%",
+                "min-height": "100vh"
             }
-        }), t._v(" "), n("yar-article") ], 1) ]), t._v(" "), n("div", {
-            staticClass: "column is-4-desktop is-hidden-touch"
-        }, [ n("yar-switcher", {
-            attrs: {
-                value: t.indicator
-            },
-            on: {
-                change: function(e) {
-                    return t.indicator = e;
-                }
-            }
-        }) ], 1) ]), t._v(" "), n("div", {
+        }, [ n("div", {
             staticClass: "columns"
         }, [ n("div", {
-            staticClass: "column is-offset-2-desktop"
-        }, [ n("yar-footer") ], 1) ]) ]) ]);
+            staticClass: "column is-6-desktop is-offset-3-desktop"
+        }, [ n("yar-header"), t._v(" "), n("yar-article"), t._v(" "), n("yar-footer") ], 1) ]) ]);
     };
     var i = [];
     r._withStripped = true;
@@ -15343,6 +15194,6 @@ function(t, e, n) {
             require("vue-hot-reload-api").rerender("data-v-b02fc960", a);
         }
     }
-}, /* 26 */
+}, /* 23 */
 /***/
 function(t, e) {} ]);

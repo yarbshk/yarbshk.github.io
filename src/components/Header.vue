@@ -1,7 +1,8 @@
 <template>
   <header class="l-header">
-    <nav class="navbar">
-      <div class="navbar-brand">
+    <nav class="navbar is-vcentered">
+      <div class="navbar-brand is-vcentered">
+        <yar-lightbulb :indicator="true"></yar-lightbulb>
         <div :class="['navbar-burger', {'is-active': isNavbarActive}]"
              @click="isNavbarActive = !isNavbarActive">
           <span></span>
@@ -45,12 +46,17 @@
 </template>
 
 <script>
+  import Lightbulb from './Lightbulb.vue'
+
   export default {
     name: 'yarHeader',
     data () {
       return {
         isNavbarActive: false
       }
+    },
+    components: {
+      [Lightbulb.name]: Lightbulb
     }
   }
 </script>
