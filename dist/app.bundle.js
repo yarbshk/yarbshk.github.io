@@ -15109,17 +15109,17 @@ function(t, e, n) {
         }, [ n("a", {
             staticClass: "navbar-item",
             attrs: {
-                href: "https://stackoverflow.com/story/yarbshk",
-                title: "Developer story",
+                href: "https://www.linkedin.com/in/yarbshk/",
+                title: "LinkedIn profile",
                 target: "_blank"
             }
         }, [ n("span", {
             staticClass: "icon"
         }, [ n("i", {
-            staticClass: "fa fa-stack-overflow"
+            staticClass: "fa fa-linkedin"
         }) ]), t._v(" "), n("span", {
             staticClass: "is-hidden-desktop"
-        }, [ t._v("Developer story") ]) ]), t._v(" "), n("a", {
+        }, [ t._v("LinkedIn profile") ]) ]), t._v(" "), n("a", {
             staticClass: "navbar-item",
             attrs: {
                 href: "https://github.com/yarbshk",

@@ -12,14 +12,14 @@
       </div>
       <div :class="['navbar-menu', {'is-active': isNavbarActive}]">
         <div class="navbar-end">
-          <a href="https://stackoverflow.com/story/yarbshk"
+          <a href="https://www.linkedin.com/in/yarbshk/"
              class="navbar-item"
-             title="Developer story"
+             title="LinkedIn profile"
              target="_blank">
             <span class="icon">
-              <i class="fa fa-stack-overflow"></i>
+              <i class="fa fa-linkedin"></i>
             </span>
-            <span class="is-hidden-desktop">Developer story</span>
+            <span class="is-hidden-desktop">LinkedIn profile</span>
           </a>
           <a href="https://github.com/yarbshk"
              class="navbar-item"
